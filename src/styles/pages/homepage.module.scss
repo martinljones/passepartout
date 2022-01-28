@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  header {
+    width: 100%;
+    height: 15vh;
+    background-color: #eee;
+  }
+  article {
+    width: 100%;
+    height: 75vh;
+    background-color: #fff;
+  }
+  footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #eee;
+  }
+}
