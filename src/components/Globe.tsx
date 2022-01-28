@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Assets
-import logo from '../logo.svg';
+import logo from '../images/logo.svg';
 
 // Styles
 import styles from "../styles/components/globe.module.scss"

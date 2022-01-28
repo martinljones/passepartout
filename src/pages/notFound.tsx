@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 // Components
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Summary from "../components/Summary";
 
 // Styles
 import '../base.css';
-import styles from  '../styles/pages/about.module.scss';
+import styles from  '../styles/pages/notFound.module.scss';
 
 function About() {
   return (
@@ -16,7 +16,8 @@ function About() {
             <Navbar />
         </header>
         <article>
-            <Summary />
+            <h1>404: Page Not Found</h1>
+            <Link to="/">Back to home</Link>
         </article>
         <footer>
             <Footer />

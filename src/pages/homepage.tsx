@@ -2,21 +2,21 @@ import React from 'react';
 
 // Components
 import Footer from "../components/Footer";
+import Globe from "../components/Globe";
 import Navbar from "../components/Navbar";
-import Summary from "../components/Summary";
 
 // Styles
 import '../base.css';
-import styles from  '../styles/pages/about.module.scss';
+import styles from  '../styles/pages/homepage.module.scss';
 
-function About() {
+function Homepage() {
   return (
     <main className={styles.app}>
         <header>
             <Navbar />
         </header>
         <article>
-            <Summary />
+            <Globe />
         </article>
         <footer>
             <Footer />
@@ -25,4 +25,4 @@ function About() {
   );
 }
 
-export default About;
+export default Homepage;
