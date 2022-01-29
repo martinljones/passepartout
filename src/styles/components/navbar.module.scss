@@ -15,7 +15,6 @@
         img {
             height: 10vh;
             max-height: 50px;
-            color: red;
         }
     }
     .menu {
@@ -31,12 +30,12 @@
             padding: 0 15px 0 0;
             cursor: pointer;
             a {
-                color: #eee;
+                color: var(--greyLight);
                 text-transform: uppercase;
                 text-decoration: none;
             }
             a:hover {
-                color: #fff;
+                color: var(--white);
                 text-decoration: underline;
             }
         }

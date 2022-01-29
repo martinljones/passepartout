@@ -7,10 +7,7 @@ import logo from '../images/logo.svg';
 // Styles
 import styles from "../styles/components/navbar.module.scss";
 
-export interface IAppProps {
-}
-
-export default function Navbar (props: IAppProps) {
+export default function Navbar() {
   return (
     <nav className={`container ${styles.navbar}`}>
       <div className={styles.brand}>
