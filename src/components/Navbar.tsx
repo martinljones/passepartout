@@ -17,10 +17,10 @@ export default function Navbar() {
       </div>
       <ul className={styles.menu}>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/globe-view">Map</Link>
         </li>
         <li>
-          <a>Sign In</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
