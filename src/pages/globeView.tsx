@@ -17,7 +17,6 @@ const GlobeView = () => {
    }, [])
 
 
-
    return (locationList.map((item: any) => {
       return <div>
          <h3>{item.userName}</h3>
