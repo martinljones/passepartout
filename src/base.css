@@ -49,16 +49,31 @@ a:hover {
 button {
   width: auto;
   font-weight: 900;
-  background-color: var(--accent);
-  color: var(--white);
   padding: 15px 10px;
-  border-color: var(--accent);
   border: 0;
   text-transform: uppercase;
   cursor: pointer;
 }
-button:hover {
+button img {
+  width: .5em;
+}
+
+button.primary {
+  color: var(--white);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+button.primary:hover {
   background-color: var(--accentDark);
+}
+
+button.secondary {
+  color: var(--accent);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+button.secondary:hover {
+  background-color: var(--greyLight);
 }
 
 header {

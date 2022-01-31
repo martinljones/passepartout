@@ -36,7 +36,7 @@ const LocationInfo = () => {
       const { latitude, longitude } = userCords;
       if (latitude && longitude) {
          return (
-            <button onClick={writeCordsToUsername}>
+            <button className="primary" onClick={writeCordsToUsername}>
                Send
             </button>
          )
@@ -47,14 +47,15 @@ const LocationInfo = () => {
    return (
       <div className={styles.locate}>
          <div className={styles.content}>
-            <p><strong>Coordinates:</strong></p>
-            <p>Lat: {userCords?.latitude ? userCords.latitude : <span className="empty">32.959394244770536</span>}<br />Long: {userCords.longitude ? userCords.longitude : <span className="empty">-96.820903070407</span>}</p>
+            <h1><strong>Coordinates:</strong></h1>
+            <p>Lat: {userCords?.latitude ? userCords.latitude : <span className="empty">&nbsp;N/A</span>}</p>
+            <p>Long: {userCords.longitude ? userCords.longitude : <span className="empty">&nbsp;N/A</span>}</p>
             <input
                value={userName}
                onChange={setUserNameChange}
                placeholder="Your name"
                type="text" />
-            {renderSubmitButton() ? renderSubmitButton() : <button onClick={getLocationHandler}> Get Location</button>}
+            {renderSubmitButton() ? renderSubmitButton() : <button className="primary" onClick={getLocationHandler}> Get Location</button>}
          </div>
       </div>
    )

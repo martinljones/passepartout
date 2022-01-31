@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import logo from '../images/logo.svg';
+import map from '../images/map.svg';
 
 // Styles
 import styles from "../styles/components/navbar.module.scss";
@@ -12,15 +13,14 @@ export default function Navbar() {
     <nav className={`container ${styles.navbar}`}>
       <div className={styles.brand}>
         <Link to="/">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
       </div>
       <ul className={styles.menu}>
         <li>
-          <Link to="/globe-view">Map</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
+          <Link to="/globe-view">
+            <button className="secondary"><img src={map} alt="Map icon" />View Map</button>
+          </Link>
         </li>
       </ul>
     </nav>
