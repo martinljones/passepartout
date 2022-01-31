@@ -1,25 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-
-import About from './pages/about';
-import Homepage from './pages/homepage';
-import NotFound from './pages/notFound';
-
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import firebase from 'firebase/compat/app';
+import { FirebaseConfig } from './utils/ApplicationConstants';
+
+
+firebase.initializeApp(FirebaseConfig)
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path='*' element={<NotFound />} />
-      <Route path="/" element={<Homepage />} />
-      <Route path="about" element={<About />} />
-    </Routes>
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
