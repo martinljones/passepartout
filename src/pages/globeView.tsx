@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { getDatabase, ref, onValue } from "firebase/database";
 
 
+// Components
+import Map from "../components/Map"
+
 const GlobeView = () => {
    const [locationList, setLocationList] = useState<any>([]);
    const dataBase = getDatabase()
@@ -16,14 +19,7 @@ const GlobeView = () => {
       getLocations();
    }, [])
 
-
-   return (locationList.map((item: any) => {
-      return <div>
-         <h3>{item.userName}</h3>
-         <h4>{item.latitude}</h4>
-         <h4>{item.longitude}</h4>
-      </div>
-   }))
+   return <Map list={locationList} />
 }
 
 export default GlobeView;
